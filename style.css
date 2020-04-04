@@ -6,6 +6,134 @@ body {
   animation: gradient 20s ease infinite ;
 }
 
+
+body, html {
+  min-height: 100%;
+  scroll-snap-type: y proximity;
+}
+
+.cd-intro{
+  margin-left: 20px;
+}
+.cd-headline.rotate-1 .cd-words-wrapper {
+  /*display: inline-block;*/
+  margin-top: 5px;
+  perspective: 900px;
+  width: 800px;
+  margin-left:20px;
+}
+
+.cd-headline.rotate-1 b {
+  opacity: 0;
+  transform-origin: 50% 100%;
+  transform: rotateX(180deg);
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.cd-headline.rotate-1 b.is-visible {
+  /*position: relative;*/
+  opacity: 1;
+  transform: rotateX(0deg);
+  animation: cd-rotate-1-in 1.2s;
+}
+
+.cd-headline.rotate-1 b.is-hidden {
+  /*position: relative;*/
+  transform: rotateX(180deg);
+  animation: cd-rotate-1-out 1.2s;
+}
+
+@keyframes cd-rotate-1-in {
+  0% {
+    transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    transform: rotateX(120deg);
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes cd-rotate-1-out {
+  0% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  35% {
+    transform: rotateX(-40deg);
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(180deg);
+    opacity: 0;
+  }
+}
+
+.name{
+  position: relative;
+  color: white;
+  font-size: 35px;
+  font-weight: 100;
+  font-family: arial;
+  margin-top: 40vh;
+  /*margin-right: 50px;*/
+  margin-left:200px;
+  /*text-align: center;*/
+}
+
+.circular-sb {
+  width: 17vw;
+  height: 17vw;
+  border: 5px solid white;
+  padding: 7vw 0px;
+  margin-top: 75px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  font-family: arial;
+  position: relative;
+  /*color: #00bfb6;*/
+  color: white;
+}
+
+
+/*right circle shape speech bubble*/
+
+.circle1 {
+  border: 5px solid white;
+  position: absolute;
+  width: 25px;
+  padding: 20px;
+  border-radius: 50%;
+  right: -15px;
+  bottom: 23px;
+}
+
+.circle2 {
+  border: 5px solid white;
+  position: absolute;
+  width: 5px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  right: -60px;
+  bottom: 5px;
+}
+
+
 @keyframes gradient {
   0% {
       background-position: 0% 50%;
@@ -29,13 +157,10 @@ body {
 }
 
 
-body, html {
-  min-height: 100%;
-}
-
 body {
   background-color: #ECF0F1;
   font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
 }
 
 img {
@@ -76,17 +201,182 @@ a:hover {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#2C3E50), to(#16A085));
   background-image: linear-gradient(0deg, #2C3E50 0%, #16A085 100%);
   width: 42vw;
-  height: 75vh;
+  height: 55vh;
   margin: 20px;
   position: relative;
   overflow: hidden;
 }
 
+.huge {
+  display: flex; 
+  flex-direction: row
+}
+
+.skills{
+  scroll-snap-align: start; 
+  margin-top: 30px; 
+  height: 100vh;
+}
+
+.mobile{
+  display: none;
+}
+
+.imagee{
+  height: 100vh;
+  display: flex; 
+  scroll-snap-align: start;
+}
+
+.projects
+{
+  scroll-snap-align: start; margin-top: 30px; height: auto;
+}
+
+#wrapper{
+  height: auto
+}
+
+.bg
+{
+  color: white; margin-left: 100px; margin-right: 100px; margin-top: 50px
+}
+
+.bar.front::before{
+  background-color: #ffcc33;
+}
+.bar.back::before{
+  background-color: #a6cfe3;
+}
+
+.bar.python::before{
+  width: 300px;
+}
+.bar.cpp::before{
+  width: 270px;
+}
+.bar.js::before{
+  width: 220px;
+}
+.bar.dart::before{
+  width:  200px;
+}
+.bar.java::before{
+  width: 180px;
+}
+.bar.sql::before{
+  width: 250px;
+}
+.bar.flutter::before{
+  width: 250px;
+}
+.bar.flask::before{
+  width: 220px;
+}
+.bar.django::before{
+  width: 200px;
+}
+.bar.react::before{
+  width:  200px;
+}
+.bar.express::before{
+  width: 150px;
+}
+.bar.git::before{
+  width: 200px;
+}
+.bar.mongo::before{
+  width: 180px;
+}
+.bar.unity::before{
+  width: 100px;
+}
+.bar.matlab::before{
+  width: 160px;
+}
+
+.container{
+
+  width: 30%;
+  margin-left: 50px;
+}
+
 @media only screen and (max-width: 900px) and (min-width: 450px) {
   .card {
-    width: 37vw;
+    width: 30vw;
     height: 40vh;
   }
+  .huge
+  {
+    flex-direction: column
+  }
+  .skills{
+    height: auto;
+  }
+  .imagee{
+    display: none;
+  }
+  .mobile{
+    scroll-snap-align: start;
+    display: block;
+    height: 800px;
+  }
+  .projects
+  {
+    height: auto
+  }
+  .bg{
+    color: white; margin-left: 10px; margin-right: 10px; margin-top: 50px
+  }
+  .container
+  {
+    margin-left: 10px
+  }
+  .bar.python::before{
+  width: 250px;
+}
+.bar.cpp::before{
+  width: 220px;
+}
+.bar.js::before{
+  width: 170px;
+}
+.bar.dart::before{
+  width:  150px;
+}
+.bar.java::before{
+  width: 130px;
+}
+.bar.sql::before{
+  width: 200px;
+}
+.bar.flutter::before{
+  width: 200px;
+}
+.bar.flask::before{
+  width: 170px;
+}
+.bar.django::before{
+  width: 150px;
+}
+.bar.react::before{
+  width:  150px;
+}
+.bar.express::before{
+  width: 100px;
+}
+.bar.git::before{
+  width: 150px;
+}
+.bar.mongo::before{
+  width: 130px;
+}
+.bar.unity::before{
+  width: 50px;
+}
+.bar.matlab::before{
+  width: 110px;
+}
 }
 
 @media only screen and (max-width: 450px) {
@@ -94,6 +384,81 @@ a:hover {
     width: 80vw;
     height: 50vh;
   }
+  .huge
+  {
+    flex-direction: column
+  }
+  .skills{
+    height: auto;
+  }
+  .imagee{
+    display: none;
+  }
+  .mobile{
+    scroll-snap-align: start;
+    display: block;
+    height: 800px;
+  }
+  .projects
+  {
+    height: auto
+  }
+  #wrapper
+  {
+    height: auto
+  }
+  .container
+  {
+    margin-left: 10px
+  }
+  .bg{
+    color: white; margin-left: 10px; margin-right: 10px; margin-top: 50px
+  }
+.bar.python::before{
+  width: 250px;
+}
+.bar.cpp::before{
+  width: 220px;
+}
+.bar.js::before{
+  width: 170px;
+}
+.bar.dart::before{
+  width:  150px;
+}
+.bar.java::before{
+  width: 130px;
+}
+.bar.sql::before{
+  width: 200px;
+}
+.bar.flutter::before{
+  width: 200px;
+}
+.bar.flask::before{
+  width: 170px;
+}
+.bar.django::before{
+  width: 150px;
+}
+.bar.react::before{
+  width:  150px;
+}
+.bar.express::before{
+  width: 100px;
+}
+.bar.git::before{
+  width: 150px;
+}
+.bar.mongo::before{
+  width: 130px;
+}
+.bar.unity::before{
+  width: 50px;
+}
+.bar.matlab::before{
+  width: 110px;
+}
 }
 
 .card-image {
@@ -175,6 +540,56 @@ a:hover {
   transition: all 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
+
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+.bar{
+  /*background-color: #EEE;*/
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+
+}
+.bar::before{
+  height: 17px;
+  content:  attr(data-skill);
+  background-color: green;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+
+
+
+
 button {
   background-color: Transparent;
   background-repeat: no-repeat;
@@ -188,5 +603,34 @@ a.nostyle{
   text-decoration: none;
   color: white;
   font-size: 12px;
+  position: relative;
+}
+
+
+a.nostyle:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  margin-top: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a.nostyle:hover {
+  color: white;
+}
+
+a.nostyle:hover:before {
+  /*color: #000;*/
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 /*# sourceMappingURL=style.css.map */
