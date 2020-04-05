@@ -301,7 +301,28 @@ a:hover {
   margin-left: 50px;
 }
 
+.me{
+  color:white;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.exps{
+  display: flex; flex-direction: row; flex-wrap: wrap;
+
+}
 @media only screen and (max-width: 900px) and (min-width: 450px) {
+  .exps{
+  display: flex; flex-direction: column; flex-wrap: wrap;
+  
+}
+
+  .me{
+    margin-left: 10px
+  }
+  .desktop{
+  display: none
+}
   .card {
     width: 30vw;
     height: 40vh;
@@ -383,6 +404,13 @@ a:hover {
 }
 
 @media only screen and (max-width: 450px) {
+  .exps{
+  display: flex; flex-direction: column; flex-wrap: wrap;
+  
+}
+  .me{
+    margin-left: 10px
+  }
   .desktop{
   display: none
 }
@@ -595,6 +623,18 @@ a:hover {
 
 
 
+.btn {
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+
+}
 
 button {
   background-color: Transparent;
