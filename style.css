@@ -568,19 +568,23 @@ a:hover {
   }
 
   .bar.git::before {
-    width: 150px;
+    width: 170px;
   }
 
   .bar.mongo::before {
-    width: 130px;
+    width: 150px;
   }
 
   .bar.unity::before {
-    width: 50px;
+    width: 100px;
   }
 
   .bar.matlab::before {
     width: 110px;
+  }
+
+  .bar.aws::before {
+    width: 80px;
   }
 }
 
