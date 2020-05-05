@@ -3,24 +3,26 @@
 body {
   background: linear-gradient(-45deg, black, #250124, #01071f, #001605, rgb(31, 0, 0), rgb(15, 0, 0));
   background-size: 1500% 1500%;
-  animation: gradient 20s ease infinite ;
+  animation: gradient 20s ease infinite;
 }
 
 
-body, html {
+body,
+html {
   min-height: 100%;
   scroll-snap-type: y proximity;
 }
 
-.cd-intro{
+.cd-intro {
   margin-left: 20px;
 }
+
 .cd-headline.rotate-1 .cd-words-wrapper {
   /*display: inline-block;*/
   margin-top: 5px;
   perspective: 900px;
   width: 800px;
-  margin-left:20px;
+  margin-left: 20px;
 }
 
 .cd-headline.rotate-1 b {
@@ -51,13 +53,16 @@ body, html {
     transform: rotateX(180deg);
     opacity: 0;
   }
+
   35% {
     transform: rotateX(120deg);
     opacity: 0;
   }
+
   65% {
     opacity: 0;
   }
+
   100% {
     transform: rotateX(360deg);
     opacity: 1;
@@ -69,20 +74,23 @@ body, html {
     transform: rotateX(0deg);
     opacity: 1;
   }
+
   35% {
     transform: rotateX(-40deg);
     opacity: 1;
   }
+
   65% {
     opacity: 0;
   }
+
   100% {
     transform: rotateX(180deg);
     opacity: 0;
   }
 }
 
-.name{
+.name {
   position: relative;
   color: white;
   font-size: 35px;
@@ -90,7 +98,7 @@ body, html {
   font-family: arial;
   margin-top: 40vh;
   /*margin-right: 50px;*/
-  margin-left:200px;
+  margin-left: 200px;
   /*text-align: center;*/
 }
 
@@ -136,24 +144,26 @@ body, html {
 
 @keyframes gradient {
   0% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
+
   50% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
+
   100% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 }
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *:after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 
@@ -186,11 +196,11 @@ a:hover {
   display: flex;
   height: 100vh;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 
@@ -208,301 +218,378 @@ a:hover {
 }
 
 .huge {
-  display: flex; 
+  display: flex;
   flex-direction: row
 }
 
-.skills{
-  scroll-snap-align: start; 
-  margin-top: 30px; 
+.skills {
+  scroll-snap-align: start;
+  margin-top: 30px;
   height: 100vh;
 }
 
-.mobile{
+.mobile {
   display: none;
 }
 
-.imagee{
+.imagee {
   height: 100vh;
-  display: flex; 
+  display: flex;
   scroll-snap-align: start;
 }
 
-.projects
-{
+.projects {
   /*scroll-snap-align: start; */
-  margin-top: 30px; 
+  margin-top: 30px;
   height: auto;
 }
 
-#wrapper{
+#wrapper {
   height: auto
 }
 
-.bg
-{
-  color: white; margin-left: 100px; margin-right: 100px; margin-top: 50px
+.bg {
+  color: white;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px
 }
 
-.bar.front::before{
+.bar.front::before {
   background-color: #ffcc33;
 }
-.bar.back::before{
+
+.bar.back::before {
   background-color: #a6cfe3;
 }
 
-.bar.python::before{
+.bar.python::before {
   width: 300px;
 }
-.bar.cpp::before{
+
+.bar.cpp::before {
   width: 270px;
 }
-.bar.js::before{
+
+.bar.js::before {
   width: 220px;
 }
-.bar.dart::before{
-  width:  200px;
+
+.bar.dart::before {
+  width: 220px;
 }
-.bar.java::before{
+
+.bar.java::before {
   width: 180px;
 }
-.bar.sql::before{
+
+.bar.sql::before {
   width: 250px;
 }
-.bar.flutter::before{
+
+.bar.flutter::before {
   width: 250px;
 }
-.bar.flask::before{
+
+.bar.flask::before {
   width: 220px;
 }
-.bar.django::before{
+
+.bar.django::before {
   width: 200px;
 }
-.bar.react::before{
-  width:  200px;
+
+.bar.react::before {
+  width: 200px;
 }
-.bar.express::before{
+
+.bar.express::before {
   width: 150px;
 }
-.bar.git::before{
+
+.bar.git::before {
   width: 200px;
 }
-.bar.mongo::before{
+
+.bar.mongo::before {
   width: 180px;
 }
-.bar.unity::before{
-  width: 100px;
+
+.bar.unity::before {
+  width: 150px;
 }
-.bar.matlab::before{
+
+.bar.matlab::before {
   width: 160px;
 }
 
-.container{
+.bar.aws::before {
+  width: 130px;
+}
+
+.container {
 
   width: 30%;
   margin-left: 50px;
 }
 
-.me{
-  color:white;
+.me {
+  color: white;
   margin-top: 50px;
   margin-left: 50px;
 }
 
-.exps{
-  display: flex; flex-direction: row; flex-wrap: wrap;
+.exps {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
 }
+
 @media only screen and (max-width: 900px) and (min-width: 450px) {
-  .exps{
-  display: flex; flex-direction: column; flex-wrap: wrap;
-  
-}
+  .exps {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 
-  .me{
+  }
+
+  .me {
     margin-left: 10px
   }
-  .desktop{
-  display: none
-}
+
+  .desktop {
+    display: none
+  }
+
   .card {
     width: 30vw;
     height: 25vh;
   }
-  .huge
-  {
+
+  .huge {
     flex-direction: column
   }
-  .skills{
+
+  .skills {
     height: auto;
   }
-  .imagee{
+
+  .imagee {
     display: none;
   }
-  .mobile{
+
+  .mobile {
     scroll-snap-align: start;
     display: block;
     height: 800px;
   }
-  .projects
-  {
+
+  .projects {
     height: auto
   }
-  .bg{
-    color: white; margin-left: 10px; margin-right: 10px; margin-top: 50px
+
+  .bg {
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px
   }
-  .container
-  {
+
+  .container {
     margin-left: 10px
   }
-  .bar.python::before{
-  width: 250px;
-}
-.bar.cpp::before{
-  width: 220px;
-}
-.bar.js::before{
-  width: 170px;
-}
-.bar.dart::before{
-  width:  150px;
-}
-.bar.java::before{
-  width: 130px;
-}
-.bar.sql::before{
-  width: 200px;
-}
-.bar.flutter::before{
-  width: 200px;
-}
-.bar.flask::before{
-  width: 170px;
-}
-.bar.django::before{
-  width: 150px;
-}
-.bar.react::before{
-  width:  150px;
-}
-.bar.express::before{
-  width: 100px;
-}
-.bar.git::before{
-  width: 150px;
-}
-.bar.mongo::before{
-  width: 130px;
-}
-.bar.unity::before{
-  width: 50px;
-}
-.bar.matlab::before{
-  width: 110px;
-}
-.desktop{
-  display: none
-}
+
+  .bar.python::before {
+    width: 250px;
+  }
+
+  .bar.cpp::before {
+    width: 220px;
+  }
+
+  .bar.js::before {
+    width: 170px;
+  }
+
+  .bar.dart::before {
+    width: 150px;
+  }
+
+  .bar.java::before {
+    width: 130px;
+  }
+
+  .bar.sql::before {
+    width: 200px;
+  }
+
+  .bar.flutter::before {
+    width: 200px;
+  }
+
+  .bar.flask::before {
+    width: 170px;
+  }
+
+  .bar.django::before {
+    width: 150px;
+  }
+
+  .bar.react::before {
+    width: 150px;
+  }
+
+  .bar.express::before {
+    width: 100px;
+  }
+
+  .bar.git::before {
+    width: 150px;
+  }
+
+  .bar.mongo::before {
+    width: 130px;
+  }
+
+  .bar.unity::before {
+    width: 50px;
+  }
+
+  .bar.matlab::before {
+    width: 110px;
+  }
+
+  .desktop {
+    display: none
+  }
 }
 
 @media only screen and (max-width: 450px) {
-  .exps{
-  display: flex; flex-direction: column; flex-wrap: wrap;
-  
-}
-  .me{
+  .exps {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  }
+
+  .me {
     margin-left: 10px
   }
-  .desktop{
-  display: none
-}
+
+  .desktop {
+    display: none
+  }
+
   .card {
     width: 80vw;
     height: 30vh;
   }
-  .huge
-  {
+
+  .huge {
     flex-direction: column
   }
-  .skills{
+
+  .skills {
     height: auto;
   }
-  .imagee{
+
+  .imagee {
     display: none;
   }
-  .mobile{
+
+  .mobile {
     scroll-snap-align: start;
     display: block;
     height: 800px;
   }
-  .projects
-  {
+
+  .projects {
     height: auto
   }
-  #wrapper
-  {
+
+  #wrapper {
     height: auto
   }
-  .container
-  {
+
+  .container {
     margin-left: 10px
   }
-  .bg{
-    color: white; margin-left: 10px; margin-right: 10px; margin-top: 50px
+
+  .bg {
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px
   }
-.bar.python::before{
-  width: 250px;
-}
-.bar.cpp::before{
-  width: 220px;
-}
-.bar.js::before{
-  width: 170px;
-}
-.bar.dart::before{
-  width:  150px;
-}
-.bar.java::before{
-  width: 130px;
-}
-.bar.sql::before{
-  width: 200px;
-}
-.bar.flutter::before{
-  width: 200px;
-}
-.bar.flask::before{
-  width: 170px;
-}
-.bar.django::before{
-  width: 150px;
-}
-.bar.react::before{
-  width:  150px;
-}
-.bar.express::before{
-  width: 100px;
-}
-.bar.git::before{
-  width: 150px;
-}
-.bar.mongo::before{
-  width: 130px;
-}
-.bar.unity::before{
-  width: 50px;
-}
-.bar.matlab::before{
-  width: 110px;
-}
+
+  .bar.python::before {
+    width: 250px;
+  }
+
+  .bar.cpp::before {
+    width: 220px;
+  }
+
+  .bar.js::before {
+    width: 170px;
+  }
+
+  .bar.dart::before {
+    width: 150px;
+  }
+
+  .bar.java::before {
+    width: 130px;
+  }
+
+  .bar.sql::before {
+    width: 200px;
+  }
+
+  .bar.flutter::before {
+    width: 200px;
+  }
+
+  .bar.flask::before {
+    width: 170px;
+  }
+
+  .bar.django::before {
+    width: 150px;
+  }
+
+  .bar.react::before {
+    width: 150px;
+  }
+
+  .bar.express::before {
+    width: 100px;
+  }
+
+  .bar.git::before {
+    width: 150px;
+  }
+
+  .bar.mongo::before {
+    width: 130px;
+  }
+
+  .bar.unity::before {
+    width: 50px;
+  }
+
+  .bar.matlab::before {
+    width: 110px;
+  }
 }
 
 .card-image {
   height: 75vh;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
+  transform: translate(0, 0);
   -webkit-transition: all 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: all 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -511,7 +598,7 @@ a:hover {
   font-size: 0.6875em;
   /* text-transform: uppercase; */
   letter-spacing: 1px;
-  
+
 }
 
 .card-meta:before {
@@ -523,10 +610,10 @@ a:hover {
   display: block;
   margin-bottom: 10px;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   opacity: 0;
   -webkit-transform: translate(0, -10px);
-          transform: translate(0, -10px);
+  transform: translate(0, -10px);
   -webkit-transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -543,9 +630,9 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-line-pack: end;
-      align-content: flex-end;
+  align-content: flex-end;
   -webkit-transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -563,7 +650,7 @@ a:hover {
 
 .card .anchor:hover .card-meta:before {
   -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
+  transform: translate(0, 0);
   opacity: 1;
   -webkit-transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -571,34 +658,37 @@ a:hover {
 
 .card .anchor:hover .card-image {
   -webkit-transform: translate(20px, 0);
-          transform: translate(20px, 0);
+  transform: translate(20px, 0);
   -webkit-transition: all 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: all 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 
-@keyframes load{
-  from {
-    width: 0%
-  }
-}
-@-webkit-keyframes load{
-  from {
-    width: 0%
-  }
-}
-@-moz-keyframes load{
-  from {
-    width: 0%
-  }
-}
-@-o-keyframes load{
+@keyframes load {
   from {
     width: 0%
   }
 }
 
-.bar{
+@-webkit-keyframes load {
+  from {
+    width: 0%
+  }
+}
+
+@-moz-keyframes load {
+  from {
+    width: 0%
+  }
+}
+
+@-o-keyframes load {
+  from {
+    width: 0%
+  }
+}
+
+.bar {
   /*background-color: #EEE;*/
   padding: 2px;
   border-radius: 15px;
@@ -606,12 +696,13 @@ a:hover {
   font-size: 14px;
   color: #FFF;
   font-weight: bold;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 
 }
-.bar::before{
+
+.bar::before {
   height: 17px;
-  content:  attr(data-skill);
+  content: attr(data-skill);
   background-color: green;
   display: inline-block;
   padding: 5px 0 5px 10px;
@@ -634,9 +725,7 @@ a:hover {
 }
 
 /* Darker background on mouse-over */
-.btn:hover {
-
-}
+.btn:hover {}
 
 button {
   background-color: Transparent;
@@ -647,7 +736,7 @@ button {
   outline: none;
 }
 
-a.nostyle{
+a.nostyle {
   text-decoration: none;
   color: white;
   font-size: 12px;
@@ -681,4 +770,5 @@ a.nostyle:hover:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
 /*# sourceMappingURL=style.css.map */
