@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 
 body {
-  background: linear-gradient(-45deg, black, #250124, #01071f, #001605, rgb(31, 0, 0), rgb(15, 0, 0));
+  background: linear-gradient(-45deg, black, #250124, #01071f, #000716, rgb(31, 0, 0), rgb(15, 0, 0));
   background-size: 1500% 1500%;
   animation: gradient 20s ease infinite;
 }
@@ -22,7 +22,8 @@ html {
   margin-top: 5px;
   perspective: 900px;
   width: 800px;
-  margin-left: 20px;
+  margin-left: 35px;
+  font-size: 27px;
 }
 
 .cd-headline.rotate-1 b {
@@ -210,8 +211,8 @@ a:hover {
   border-width: 2px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#2C3E50), to(#16A085));
   background-image: linear-gradient(0deg, #2C3E50 0%, #16A085 100%);
-  width: 42vw;
-  height: 55vh;
+  width: 28vw;
+  height: 40vh;
   margin: 20px;
   position: relative;
   overflow: hidden;
@@ -239,7 +240,7 @@ a:hover {
 }
 
 .projects {
-  /*scroll-snap-align: start; */
+  scroll-snap-align: start;
   margin-top: 30px;
   height: auto;
 }
@@ -727,9 +728,6 @@ a:hover {
   cursor: pointer;
   font-size: 20px;
 }
-
-/* Darker background on mouse-over */
-.btn:hover {}
 
 button {
   background-color: Transparent;
