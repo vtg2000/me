@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="black">
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Vignesh Viswanathan</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css" rel="stylesheet">
     <link rel='stylesheet' href='animate.css'>
     <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='modal.css'>
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 </head>
@@ -22,7 +23,7 @@
     <!-- profile header -->
     <div class='imagee'>
         <div class='name animated bounceInUp' style='flex: none; width: 550px'>
-            <span>I am Vignesh Viswanathan, </span>
+            <span >I am Vignesh Viswanathan, </span>
             <div class=" cd-headline rotate-1">
                 <div class="cd-words-wrapper">
                     <b class="is-visible">a competitive programmer</b>
@@ -35,13 +36,13 @@
                 </div>
             </div>
         </div>
-        <div class="circular-sb animated bounceInLeft" style='flex: none; z-index: 2'>
+        <!-- <div class="circular-sb animated bounceInLeft" style='flex: none; z-index: 2'>
             Hello there!
             <div class="circle1"></div>
             <div class="circle2"></div>
-        </div>
+        </div> -->
         <img class=" animated bounceInRight" src="images/rat.jfif" style='border: 2px solid white;height: 20vw; width: 20vw; border-radius: 50%; 
-            margin-top: 130px; margin-right: 40px'>
+            margin-top: 130px; margin-right: 0px; margin-left: 100px;'>
     </div>
     <!-- mobile profile header -->
     <div class='mobile'>
@@ -352,7 +353,7 @@
 
             <!-- hoc -->
 
-            <article class="card" onclick="doSomething()" data-aos="fade-up" role="article">
+            <article class="card demo01"  href="#animatedModal" onclick="doSomething(1)" data-aos="fade-up" role="article">
                 <div class='anchor' href="#">
                     <div class="card-text">
                         <div class="card-meta">A Unity 2d Platformer where you switch colors to avoid obstacles and
@@ -366,7 +367,7 @@
             </article>
 
             <!-- shoot -->
-            <article class="card" data-aos="fade-up" role="article">
+            <article class="card demo01" href="#animatedModal" onclick="doSomething(2)" data-aos="fade-up" role="article">
                 <div class='anchor' href='#'>
                     <div class="card-text">
                         <div class="card-meta">A bottom-up Galaga style shooter made using Flutter and Flame</div>
@@ -378,7 +379,7 @@
             </article>
 
             <!-- golf -->
-            <article class="card" data-aos="fade-up" role="article">
+            <article class="card demo01" href="#animatedModal" onclick="doSomething(3)" data-aos="fade-up" role="article">
                 <!-- <div style="cursor: pointer;" onclick="window.location='http://google.com';"> -->
                 <div class='anchor' href="#">
                     <div class="card-text">
@@ -391,7 +392,7 @@
             </article>
 
             <!-- cricket -->
-            <article class="card" data-aos="fade-up" role="article">
+            <article class="card demo01" href="#animatedModal" onclick="doSomething(4)" data-aos="fade-up" role="article">
                 <div href="#" class='anchor'>
                     <div class="card-text">
                         <div class="card-meta">A browser based Cricket game made using p5 and matter.js</div>
@@ -404,7 +405,7 @@
             </article>
 
             <!-- morse it -->
-            <article class="card" data-aos="fade-up" role="article">
+            <article class="card demo01" href="#animatedModal" onclick="doSomething(5)" data-aos="fade-up" role="article">
                 <div class='anchor' href="#">
                     <div class="card-text">
                         <div class="card-meta">A mobile app to realize Morse code via three different senses</div>
@@ -417,7 +418,7 @@
 
             <!-- honesty -->
 
-            <article class="card" data-aos="fade-up" role="article">
+            <article class="card demo01" href="#animatedModal" onclick="doSomething(6)" data-aos="fade-up" role="article">
                 <div class='anchor' href="#">
                     <div class="card-text">
                         <div class="card-meta">A Dialogflow based chatbot that furnishes users with all the
@@ -431,7 +432,7 @@
 
             <!-- bullieseye -->
 
-            <article class="card" data-aos="fade-up" role="article">
+            <article class="card demo01" href="#animatedModal" onclick="doSomething(7)" data-aos="fade-up" role="article">
                 <div class='anchor' href="#">
                     <div class="card-text">
                         <div class="card-meta">A dashboard and Twitter, Telegram bots to detect and prevent
@@ -444,7 +445,7 @@
             </article>
 
             <!-- quiz -->
-            <article class="card" data-aos="fade-up" role="article">
+            <article class="card demo01" href="#animatedModal" onclick="doSomething(8)" data-aos="fade-up" role="article">
                 <div class='anchor' href="#">
                     <div class="card-text">
                         <div class="card-meta">An infinite quiz application with many categories made using Flutter
@@ -458,7 +459,7 @@
 
             <!-- whatsanalyser -->
 
-            <article class="card" data-aos="fade-up" role="article">
+            <article class="card demo01" href="#animatedModal" onclick="doSomething(9)" data-aos="fade-up" role="article">
                 <div class='anchor' href="#">
                     <div class="card-text">
                         <div class="card-meta">A Python script to analyse your WhatsApp chats</div>
@@ -471,7 +472,7 @@
 
             <!-- my chatbot -->
 
-            <article class="card" data-aos="fade-up" role="article">
+            <article class="card demo01" href="#animatedModal" onclick="doSomething(10)" data-aos="fade-up" role="article">
                 <div class='anchor' href="#">
                     <div class="card-text">
                         <div class="card-meta">A Python based chatbot trained to talk like me</div>
@@ -483,7 +484,7 @@
 
             <!-- push me up -->
 
-            <article class="card" data-aos="fade-up" role="article">
+            <article class="card demo01" href="#animatedModal" onclick="doSomething(11)" data-aos="fade-up" role="article">
                 <div class='anchor' href="#">
                     <div class="card-text">
                         <div class="card-meta">A simple Flutter based app to aid your workout and count push ups
@@ -497,7 +498,7 @@
 
             <!-- truck it easy -->
 
-            <article class="card" data-aos="fade-up" role="article">
+            <article class="card demo01" href="#animatedModal" onclick="doSomething(12)" data-aos="fade-up" role="article">
                 <div class='anchor' href="#">
                     <div class="card-text">
                         <div class="card-meta">A mockup PHP based website for a Smart Goods Transportation System
@@ -514,7 +515,7 @@
 
             <!-- newsbuster -->
 
-            <article class="card" data-aos="fade-up" role="article">
+            <article class="card demo01" href="#animatedModal" onclick="doSomething(13)" data-aos="fade-up" role="article">
                 <div class='anchor' href="#">
                     <div class="card-text">
                         <div class="card-meta">A Webapp / Facebook bot for fake news detection</div>
@@ -528,7 +529,7 @@
 
             <!-- Roll a cube -->
 
-            <article class="card" data-aos="fade-up" role="article">
+            <article class="card demo01" href="#animatedModal" onclick="doSomething(14)" data-aos="fade-up" role="article">
                 <div class='anchor' href="#">
                     <div class="card-text">
                         <div class="card-meta">A Unity game for Android and Windows where you move around a cube to
@@ -546,7 +547,7 @@
 
             <!-- wheres that -->
 
-            <article class="card" data-aos="fade-up" role="article">
+            <article class="card demo01" href="#animatedModal" onclick="doSomething(15)" data-aos="fade-up" role="article">
                 <div class='anchor' href="#">
                     <div class="card-text">
                         <div class="card-meta">A Javascript based Webapp to create custom maps and pathfinding</div>
@@ -560,7 +561,7 @@
 
 
             <!-- Emcure for U -->
-            <article class="card" data-aos="fade-up" role="article">
+            <article class="card demo01" href="#animatedModal" onclick="doSomething(16)" data-aos="fade-up" role="article">
                 <div class='anchor' href="#">
                     <div class="card-text">
                         <div class="card-meta">A Flutter based post-maker to raise awareness about COVID-19</div>
@@ -573,7 +574,7 @@
 
             <!-- Wump5 -->
 
-            <article class="card" data-aos="fade-up" role="article">
+            <article class="card demo01" href="#animatedModal" onclick="doSomething(17)" data-aos="fade-up" role="article">
                 <div href="#" class='anchor'>
                     <div class="card-text">
                         <div class="card-meta">A browser simulation for the Wumpus World problem in AI</div>
@@ -587,7 +588,7 @@
 
             <!-- birthday app -->
 
-            <article class="card" data-aos="fade-up" role="article">
+            <article class="card demo01" href="#animatedModal" onclick="doSomething(18)" data-aos="fade-up" role="article">
                 <div class='anchor' href="#">
                     <div class="card-text">
                         <div class="card-meta">A perfect birthday gift for your friends</div>
@@ -599,7 +600,7 @@
 
             <!-- java calculator -->
 
-            <article class="card" data-aos="fade-up" role="article">
+            <article class="card demo01" href="#animatedModal" onclick="doSomething(19)" data-aos="fade-up" role="article">
                 <div class='anchor' href="#">
                     <div class="card-text">
                         <div class="card-meta">A simple Java applet with MySQL integration</div>
@@ -612,6 +613,19 @@
 
         </div>
     </div>
+
+    <!--DEMO01-->
+    <div id="animatedModal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <div class="close-animatedModal">
+        <i class="fa fa-window-close" style="font-size: 30px; color: aliceblue; float: right; margin-right: 20px; margin-top:20px; cursor:pointer;" aria-hidden="true"></i>
+        </div>
+    
+        <div id="modal-content" style="height: auto; margin-top: 50px;">
+            <!--Your modal content goes here-->
+        </div>
+    </div>
+
     <div style='height: 100px'>
     </div>
 
@@ -647,37 +661,37 @@
         style='
         height: 100px;
         width: 100%; display: flex; flex-direction: row; justify-content: space-between; padding: 40px 40px 0px 40px; flex-wrap: wrap;'>
-        <p style='color: white'>Vignesh Viswanathan</p>
+        <p style='color: white'><a href='/' class='nostyle' style='font-size: 16px'>Vignesh Viswanathan</a></p>
         <div
             style='display: flex; flex-direction: row; align-items: flex-end; justify-content: space-between; width: 400px; margin-bottom: 15px'>
 
             <div>
-                <a href='https://www.linkedin.com/in/vignesh-viswanathan-885449150/'>
+                <a class='nostyle' style='font-size: 14px' href='https://www.linkedin.com/in/vignesh-viswanathan-885449150/'>
                     <i class="fab fa-linkedin-in fa-2x" style='filter: brightness(0) invert(1);'></i>
                 </a>
             </div>
 
             <div>
-                <a href='https://twitter.com/vtg_2000'>
+                <a class='nostyle' style='font-size: 14px' href='https://twitter.com/vtg_2000'>
                     <i class="fab fa-twitter fa-2x" style='filter: brightness(0) invert(1);'></i>
                 </a>
             </div>
 
             <div>
-                <a href='https://github.com/vtg2000'>
+                <a class='nostyle' style='font-size: 14px' href='https://github.com/vtg2000'>
                     <i class="fab fa-github fa-2x" style='filter: brightness(0) invert(1);'></i>
                 </a>
             </div>
 
             <div>
-                <a href='https://www.codechef.com/users/vtg2000'>
+                <a class='nostyle' style='font-size: 14px' href='https://www.codechef.com/users/vtg2000'>
                     <image src='images/codechef.png' style='height: 30px; width:30px; filter: brightness(0) invert(1);'>
                     </image>
                 </a>
 
             </div>
             <div>
-                <a href='https://www.hackerrank.com/vigneshvisw'>
+                <a class='nostyle' style='font-size: 14px' href='https://www.hackerrank.com/vigneshvisw'>
                     <image src='images/hacker.webp' style='height: 30px; width:30px; filter: brightness(0) invert(1);'>
                     </image>
                 </a>
@@ -696,7 +710,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js.map"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/d04995f8bf.js" crossorigin="anonymous"></script>
-
+    <script src="animatedModal.min.js"></script>
+    <script>
+        $(".demo01").animatedModal(
+            
+        );
+    </script>
     <script>
         AOS.init();
 
@@ -745,20 +764,35 @@
     </script>
     <script>
         $(document).ready(function () {
+            if(screen.width > 1000)
+            {
             $('.test').viewportChecker({
                 classToAdd: 'bar',
-                offset: 100,
+                offset: -100,
                 repeat: true,
                 callbackFunction: function (elem, action) {
 
                 }
             });
+            }
+            else
+            {
+                $('.test').viewportChecker({
+                    classToAdd: 'bar',
+                    offset: 0,
+                    repeat: false,
+                    callbackFunction: function (elem, action)
+                    {
+
+                    }
+                });
+            }
+            
         });
 
-        function doSomething() {
-            console.log('hi')
-        }
+        
     </script>
+    <script  src="modal.js"></script>
 </body>
 
 </html>
