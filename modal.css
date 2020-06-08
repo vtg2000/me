@@ -11,7 +11,15 @@
 
     margin-top: 30px;
     height: 60vh;
-    width: 60vw;
+    width: auto;
+    margin-bottom: 30px;
+}
+
+.modal-image2 {
+
+    margin-top: 10px;
+    height: 75vh;
+    width: auto;
     margin-bottom: 30px;
 }
 
@@ -35,6 +43,52 @@
     text-align: justify;
     margin-bottom: 50px;
 }
+
+.desc1 {
+    text-align: center;
+    margin-top: 50px;
+    /* margin-left: 15%; */
+    margin-right: 15%;
+    color: white;
+    font-size: 18px;
+    /* font-weight: 300; */
+    width: 70%;
+    display: inline-block;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 450px) {
+
+    .image-wrapper {
+        height: 25vh;
+    }
+
+    .modal-image {
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 21vh;
+    }
+
+    .modal-image2 {
+        height: 45vh;
+    }
+
+    .desc {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .desc1 {
+        margin-top: 3%;
+        width: 90%;
+        margin-left: 3%;
+        margin-right: 5%;
+    }
+}
+
+
 
 
 a.goodstyle {
