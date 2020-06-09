@@ -344,7 +344,22 @@ Users can enter their stops of interest, and the application comes up with an op
         <div class="desc1">
             Emcure for U is a post customising app, created by me in Flutter. This app was created for Proventus - Pharma Advertising Agency as a freelancing project. 
             It is being used by over 550 users all over India to make posts and raise awareness about COVID-19. 
+            Features include :
+            <br>
+            <br>
+            <ul>
+            <li>
 
+            Image selector
+            </li><li>
+                Image editor for cropping and resizing the image
+                </li><li>
+                Add your own name and qualification
+              </li><li>
+Export image to gallery for quick sharing
+</li>
+                
+            </ul>
 
             <br>
             <br>
