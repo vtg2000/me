@@ -412,6 +412,38 @@ Export image to gallery for quick sharing
         </div>
         </div>
         `;
+    } else if (x == 20) {
+        modal.innerHTML = `<b class="heading">Tworlds</b>
+        <div class="image-wrapper">
+            <img class="modal-image" src='images/tworlds.gif'>
+            </img>
+        </div>
+        <div class="desc">
+           A game of two worlds, light and dark, and a player with the power to travel between these worlds.
+            <br><br>
+           A puzzle/platformer game where you take control of the player and use their powers to reach the portals at the end of each levels. Can you reach the end?
+            <br><br>
+            This project was created in Godot as part of the itch.io United Game Jam in under 48 hours.
+           <br>
+            <br>
+            View the code <a class="goodstyle" href="https://github.com/vtg2000/Tworlds"><b>here</b></a> or download the game <a class="goodstyle" href="https://vtg2000.itch.io/tworlds"><b>here</b></a>.
+        </div>
+        `;
+    } else if (x == 21) {
+        modal.innerHTML = `<b class="heading">Rock Paper Shooter</b>
+        <div class="image-wrapper">
+            <img class="modal-image" src='images/rps.gif'>
+            </img>
+        </div>
+        <div class="desc">
+           A game of rock paper scissors, with a twist!
+
+        There's a rebellion on our hands! We need your help in defending the realm.
+            <br>
+            <br>
+            View the code <a class="goodstyle" href="https://github.com/vtg2000/rock-paper-shooter"><b>here</b></a> or play the game <a class="goodstyle" href="https://vtg2000.itch.io/rock-paper-shooter"><b>here</b></a>.
+        </div>
+        `;
     }
 
 }
