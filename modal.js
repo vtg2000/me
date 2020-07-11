@@ -124,7 +124,7 @@ function doSomething(x) {
     } else if (x == 7) {
         modal.innerHTML = `<b class="heading">BulliesEye</b>
         <div class="image-wrapper">
-            <img class="modal-image" src='images/bull1.png'>
+            <img class="modal-image" src='images/bullies.png'>
             </img>
         </div>
         <div class="desc">
@@ -439,7 +439,10 @@ Export image to gallery for quick sharing
            A game of rock paper scissors, with a twist!
 
         There's a rebellion on our hands! We need your help in defending the realm.
-            <br>
+        <br>
+        <br>
+            This project was created in p5.js and matterjs as part of the itch.io Weekly Game Jam - Week 154.
+        <br>
             <br>
             View the code <a class="goodstyle" href="https://github.com/vtg2000/rock-paper-shooter"><b>here</b></a> or play the game <a class="goodstyle" href="https://vtg2000.itch.io/rock-paper-shooter"><b>here</b></a>.
         </div>

@@ -251,6 +251,22 @@ a:hover {
   height: auto
 }
 
+.project-flex {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.type {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
 .bg {
   color: white;
   margin-left: 100px;
@@ -359,6 +375,10 @@ a:hover {
     flex-direction: column;
     flex-wrap: wrap;
 
+  }
+
+  .type {
+    margin-right: 10px;
   }
 
   .me {
@@ -497,6 +517,10 @@ a:hover {
     display: none
   }
 
+  .type {
+    margin-right: 10px;
+  }
+
   .card {
     width: 80vw;
     height: 30vh;
@@ -541,7 +565,12 @@ a:hover {
     color: white;
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 50px
+    margin-top: 50px;
+    text-align: justify;
+  }
+
+  p {
+    text-align: justify;
   }
 
   .bar.python::before {
