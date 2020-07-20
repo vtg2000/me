@@ -58,40 +58,6 @@
     margin-bottom: 50px;
 }
 
-@media only screen and (max-width: 450px) {
-
-    .image-wrapper {
-        height: 25vh;
-    }
-
-    .modal-image {
-        margin-left: 10px;
-        margin-right: 10px;
-        height: 21vh;
-    }
-
-    .modal-image2 {
-        margin-top: 35px;
-        height: 45vh;
-    }
-
-    .desc {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    .desc1 {
-        margin-top: 30px;
-        width: 90%;
-        margin-left: 3%;
-        margin-right: 5%;
-    }
-}
-
-
-
-
 a.goodstyle {
     text-decoration: none;
     color: white;
@@ -125,4 +91,39 @@ a.goodstyle:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+}
+
+@media only screen and (max-width: 450px) {
+
+    .image-wrapper {
+        height: 25vh;
+    }
+
+    .modal-image {
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 21vh;
+    }
+
+    .modal-image2 {
+        margin-top: 35px;
+        height: 45vh;
+    }
+
+    .desc {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .desc1 {
+        margin-top: 30px;
+        width: 90%;
+        margin-left: 3%;
+        margin-right: 5%;
+    }
+
+    a.goodstyle {
+        font-size: 14px;
+    }
 }
