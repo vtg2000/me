@@ -447,6 +447,26 @@ Export image to gallery for quick sharing
             View the code <a class="goodstyle" href="https://github.com/vtg2000/rock-paper-shooter"><b>here</b></a> or play the game <a class="goodstyle" href="https://vtg2000.itch.io/rock-paper-shooter"><b>here</b></a>.
         </div>
         `;
+    } else if (x == 22) {
+        modal.innerHTML = `<b class="heading">Shape detector</b>
+        <div class="image-wrapper">
+            <img class="modal-image" src='images/sfd2.png'>
+            </img>
+        </div>
+        <div class="desc">
+        A Python open-cv implementation to find out different shapes in images. Uses 2 methods - 
+        <li>
+
+            Canny edge detection
+            </li><li>
+                Thresholding and contour approximation
+        <br>
+        <br>
+            This project was created as part of DSIP Mini-project.
+        <br>
+        <br>
+        </div>
+        `;
     }
 
 }
