@@ -467,6 +467,35 @@ Export image to gallery for quick sharing
         <br>
         </div>
         `;
+    } else if (x == 23) {
+        modal.innerHTML = `<b class="heading">Discord Bot</b>
+        <div style='display:flex; flex-direction:row'>
+        <div class="image-wrapper"  >
+            <img class="modal-image2" src='images/discord.gif'>
+            </img>
+        </div>
+        <div class="desc1">
+            This was an attempt at creating a automated bot on Discord, which performs multiple functions. The bot is deployed on Heroku, and can be invited to any server. Its functions include :
+            <br>
+            <br>
+            <ul>
+            <li>
+
+            Channel spammer
+            </li><li>
+                GRE word meanings and similar words
+                </li><li>
+                Fortnite game details using API
+              </li>
+            </ul>
+
+            <br>
+            <br>
+                Invite the bot <a class = "goodstyle"
+            href="https://discord.com/oauth2/authorize?client_id=710495998572494908&permissions=1279261798&scope=bot"> <b> here </b></a> .
+        </div>
+        </div>
+        `;
     }
 
 }
