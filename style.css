@@ -480,6 +480,10 @@ a:hover {
     width: 100px;
   }
 
+  .bar.spring::before {
+    width: 115px;
+  }
+
   .bar.git::before {
     width: 150px;
   }
@@ -624,6 +628,10 @@ a:hover {
 
   .bar.express::before {
     width: 100px;
+  }
+
+  .bar.spring::before {
+    width: 115px;
   }
 
   .bar.git::before {

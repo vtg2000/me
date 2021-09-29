@@ -31,9 +31,6 @@ function doSomething(x) {
             ServAR is my final year project. It is an Augmented Reality System which 
             enables customers at a Restaurant view the menu items in 3D before placing an order.
             It also contains many other features like Rate and review, favourites, I'm feeling lucky, ETA calculation, etc.
-
-
-
             <br>
             <br>
         </div>
