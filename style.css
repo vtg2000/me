@@ -330,6 +330,10 @@ a:hover {
   width: 150px;
 }
 
+.bar.spring::before {
+  width: 165px;
+}
+
 .bar.git::before {
   width: 200px;
 }

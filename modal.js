@@ -18,7 +18,29 @@ function doSomething(x) {
             Download the apk<a class='goodstyle' href='images/hoc.apk' download="hoc.apk"> <b>here</b></a>
         </div>
         `;
-    } else if (x == 2) {
+    } 
+    else if (x == 100) {
+        modal.innerHTML = `
+        <b class="heading">ServAR</b>
+        <div style='display:flex; flex-direction:row'>
+        <div class="image-wrapper"  >
+            <img class="modal-image2" src='images/servar.gif'>
+            </img>
+        </div>
+        <div class="desc1">
+            ServAR is my final year project. It is an Augmented Reality System which 
+            enables customers at a Restaurant view the menu items in 3D before placing an order.
+            It also contains many other features like Rate and review, favourites, I'm feeling lucky, ETA calculation, etc.
+
+
+
+            <br>
+            <br>
+        </div>
+        </div>
+        `;
+    }
+    else if (x == 2) {
         modal.innerHTML = `
         <b class="heading">Shoot!</b>
         <div style='display:flex; flex-direction:row'>
